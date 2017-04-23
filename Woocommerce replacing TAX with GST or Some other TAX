@@ -1,0 +1,18 @@
+/* for main field */
+function edit_woo_tax_label() {
+
+ return "GST";
+
+}
+
+add_filter( 'woocommerce_countries_tax_or_vat','edit_woo_tax_label',10,1);
+
+
+/* for extention   */
+function edit_woo_ex_tax_label() {
+
+ return "ex. GST";
+
+}
+
+add_filter( 'woocommerce_countries_ex_tax_or_vat','edit_woo_ex_tax_label',10,1);
