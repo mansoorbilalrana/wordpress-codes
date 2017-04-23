@@ -1,0 +1,42 @@
+/* add this code to function.php file */
+
+
+add_filter('user_contactmethods', '_my_get_user_contactmethods');
+
+function _my_get_user_contactmethods() {
+
+    $user_contactmethods = array(
+
+        'bussiness_name' => __('Registered Business Name'),// chnage the field names according your field name
+
+        'trading_name' => __('Trading Name'),
+
+        'website_url' => __('Website URL'),
+
+        'Street_Address' => __('Street Address'),
+
+        'Post_Code' => __('Post Code'),
+
+        'State_name' => __('State'),
+
+        'title' => __('title'),
+
+        'Country_name' => __('Country'),
+
+        'Telephone' => __('Telephone'),
+
+        'Fax' => __('Fax'),
+
+        'Mobile' => __('Mobile'),
+
+        'Company_Position' => __('Company Position'),
+
+        'hear_about_us' => __('How did you hear about us?'),
+
+        'about_your_company' => __('Tell us about your Company')
+
+    );
+
+    return $user_contactmethods;
+
+}
